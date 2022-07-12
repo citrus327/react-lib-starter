@@ -6,8 +6,10 @@ import external from "rollup-plugin-peer-deps-external";
 import postcss from "rollup-plugin-postcss";
 import typescript from "@rollup/plugin-typescript";
 import pkg from "./package.json";
+import { defineConfig } from "rollup";
+import { terser } from "rollup-plugin-terser";
 
-const config = {
+const config = defineConfig({
   input: "src/index.ts",
   output: [
     {
@@ -33,7 +35,6 @@ const config = {
     }),
     babel({
       babelHelpers: "bundled",
-      babelrc: false,
       presets: [
         [
           "@babel/preset-env",
@@ -46,7 +47,8 @@ const config = {
     }),
     url(),
     typescript({ tsconfig: "./tsconfig.json" }),
+    terser(),
   ],
-};
+});
 
 export default config;

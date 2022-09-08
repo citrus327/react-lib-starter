@@ -6,7 +6,6 @@
     "outDir": "./dist",
     "target": "es6",
     "moduleResolution": "node",
-    "baseUrl": "./src",
     "lib": [
       "dom",
       "dom.iterable",
@@ -19,9 +18,14 @@
     "pretty": true,
     "downlevelIteration": true,
     "skipLibCheck": true,
+    "sourceMap": true,
     "allowSyntheticDefaultImports": true,
     "importHelpers": true,
     "emitDeclarationOnly": true,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"]
+    }
   }
 }

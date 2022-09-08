@@ -8,6 +8,9 @@ import typescript from "@rollup/plugin-typescript";
 import pkg from "./package.json";
 import { defineConfig } from "rollup";
 import { terser } from "rollup-plugin-terser";
+import alias from "@rollup/plugin-alias";
+import tsTransformPaths from "@zerollup/ts-transform-paths";
+import path from "path";
 
 const config = defineConfig({
   input: "src/index.ts",
@@ -24,6 +27,9 @@ const config = defineConfig({
     },
   ],
   plugins: [
+    alias({
+      entries: [{ find: "@", replacement: path.join(process.cwd(), "src") }],
+    }),
     resolve(),
     commonjs(),
     postcss({
@@ -46,7 +52,23 @@ const config = defineConfig({
       ],
     }),
     url(),
-    typescript({ tsconfig: "./tsconfig.json" }),
+    typescript({
+      tsconfig: "./tsconfig.json",
+      compilerOptions: {
+        sourceMap: false,
+      },
+      transformers: {
+        afterDeclarations: [
+          {
+            type: "program",
+            factory: (program) => {
+              const transformer = tsTransformPaths(program);
+              return transformer.afterDeclarations;
+            },
+          },
+        ],
+      },
+    }),
     terser(),
   ],
 });

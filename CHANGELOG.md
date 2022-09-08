@@ -14,4 +14,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `Fixed` for any bug fixes.
 - `Security` in case of vulnerabilities.
 
-## [0.10.1] - 2022-07-07
+## [0.1.0] - Unreleased
+
+## Added
+
+- TBD

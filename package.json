@@ -14,13 +14,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/phshy0607/react-lib-starter.git"
+    "url": "git+https://github.com/citrus327/react-lib-starter.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/phshy0607/react-lib-starter/issues"
+    "url": "https://github.com/citrus327/react-lib-starter/issues"
   },
-  "homepage": "https://github.com/phshy0607/react-lib-starter#readme",
+  "homepage": "https://github.com/citrus327/react-lib-starter#readme",
   "peerDependencies": {
     "react": ">=17",
     "react-dom": ">=17"
@@ -28,7 +28,7 @@
   "devDependencies": {
     "@babel/core": "^7.17.9",
     "@babel/preset-env": "^7.16.11",
-    "@blizzbolts/docit": "^0.10.1",
+    "@blizzbolts/docit": "^0.11.0",
     "@rollup/plugin-alias": "^3.1.9",
     "@rollup/plugin-babel": "^5.3.1",
     "@rollup/plugin-commonjs": "^22.0.0",

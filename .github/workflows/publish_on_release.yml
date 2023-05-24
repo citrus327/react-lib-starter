@@ -21,6 +21,6 @@ jobs:
       - name: Build
         run: pnpm run build
       - name: Publish package on NPM 📦
-        uses: JS-DevTools/npm-publish@v1
+        uses: JS-DevTools/npm-publish@v2
         with:
           token: ${{ secrets.NPM_PUBLISH }}

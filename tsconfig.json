@@ -1,17 +1,14 @@
 {
   "extends": "@tsconfig/create-react-app/tsconfig.json",
   "compilerOptions": {
+    "allowImportingTsExtensions": true,
     "noEmit": false,
     "declaration": true,
     "declarationDir": "./dist",
     "outDir": "./dist",
     "sourceMap": true,
     "emitDeclarationOnly": true,
-    "noImplicitAny": false,
-    "baseUrl": "./src",
-    "paths": {
-      "@/*": ["*"]
-    },
+    "noImplicitAny": false
   },
   "include": ["./src"]
 }

@@ -42,6 +42,7 @@
     "@types/styled-components": "^5.1.26",
     "@zerollup/ts-transform-paths": "^1.7.18",
     "cross-env": "^7.0.3",
+    "git-cliff": "^1.2.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.27",
     "prop-types": "^15.8.1",

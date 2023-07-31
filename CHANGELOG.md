@@ -18,6 +18,10 @@ All notable changes to this project will be documented in this file.
 - Using rollup-plugin-delete instead of rimraf
 - Remove react-is
 - Generate changelog
+- Generate changelog
+- Panda integration
+- Panda integration
+- Add cascade layer polyfill for panda-css
 
 ### Miscellaneous Tasks
 

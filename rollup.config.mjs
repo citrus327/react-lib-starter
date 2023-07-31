@@ -1,3 +1,5 @@
+import path from "node:path";
+import fs from "node:fs";
 import { defineConfig } from "rollup";
 import { swc } from "rollup-plugin-swc3";
 import replace from "@rollup/plugin-replace";
@@ -9,8 +11,7 @@ import postcss from "rollup-plugin-postcss";
 import terser from "@rollup/plugin-terser";
 import json from "@rollup/plugin-json";
 import alias from "@rollup/plugin-alias";
-import path from "node:path";
-import fs from "node:fs";
+import del from "rollup-plugin-delete";
 
 const pkg = JSON.parse(
   fs.readFileSync(path.resolve(process.cwd(), "./package.json"), {
@@ -19,6 +20,7 @@ const pkg = JSON.parse(
 );
 
 const plugins = [
+  del({ targets: "dist/*" }),
   resolve(),
   commonjs(),
   replace({

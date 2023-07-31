@@ -1,9 +1,13 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   core-js:
-    specifier: 3.30.2
-    version: registry.npmmirror.com/core-js@3.30.2
+    specifier: 3.32.0
+    version: registry.npmmirror.com/core-js@3.32.0
   tslib:
     specifier: ^2.5.2
     version: registry.npmmirror.com/tslib@2.5.2
@@ -20,7 +24,7 @@ devDependencies:
     version: registry.npmmirror.com/@rollup/plugin-node-resolve@15.0.2(rollup@3.23.0)
   '@rollup/plugin-swc':
     specifier: ^0.1.1
-    version: registry.npmmirror.com/@rollup/plugin-swc@0.1.1(@swc/core@1.3.59)(rollup@3.23.0)
+    version: registry.npmmirror.com/@rollup/plugin-swc@0.1.1(@swc/core@1.3.72)(rollup@3.23.0)
   '@rollup/plugin-terser':
     specifier: ^0.4.3
     version: registry.npmmirror.com/@rollup/plugin-terser@0.4.3(rollup@3.23.0)
@@ -214,7 +218,7 @@ packages:
       rollup: registry.npmmirror.com/rollup@3.23.0
     dev: true
 
-  registry.npmmirror.com/@rollup/plugin-swc@0.1.1(@swc/core@1.3.59)(rollup@3.23.0):
+  registry.npmmirror.com/@rollup/plugin-swc@0.1.1(@swc/core@1.3.72)(rollup@3.23.0):
     resolution: {integrity: sha512-nDbcgC39Y0NWsvSd3O2B7qLB19lVkX5rCqRVDqkS991WL2WVpJyp2vX0pa2W5OviwyG/UFxCypkc6NiC6C6r5Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@rollup/plugin-swc/-/plugin-swc-0.1.1.tgz}
     id: registry.npmmirror.com/@rollup/plugin-swc/0.1.1
     name: '@rollup/plugin-swc'
@@ -227,7 +231,7 @@ packages:
       rollup:
         optional: true
     dependencies:
-      '@swc/core': registry.npmmirror.com/@swc/core@1.3.59
+      '@swc/core': registry.npmmirror.com/@swc/core@1.3.72
       rollup: registry.npmmirror.com/rollup@3.23.0
       smob: registry.npmmirror.com/smob@1.1.1
     dev: true
@@ -286,10 +290,10 @@ packages:
       rollup: registry.npmmirror.com/rollup@3.23.0
     dev: true
 
-  registry.npmmirror.com/@swc/core-darwin-arm64@1.3.59:
-    resolution: {integrity: sha512-AnqWFBgEKHP0jb4iZqx7eVQT9/rX45+DE4Ox7GpwCahUKxxrsDLyXzKhwLwQuAjUvtu5JcSB77szKpPGDM49fQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-darwin-arm64/-/core-darwin-arm64-1.3.59.tgz}
+  registry.npmmirror.com/@swc/core-darwin-arm64@1.3.72:
+    resolution: {integrity: sha512-oNSI5hVfZ+1xpj+dH1g4kQqA0VsGtqd8S9S+cDqkHZiOOVOevw9KN6dzVtmLOcPtlULVypVc0TVvsB55KdVZhQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-darwin-arm64/-/core-darwin-arm64-1.3.72.tgz}
     name: '@swc/core-darwin-arm64'
-    version: 1.3.59
+    version: 1.3.72
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [darwin]
@@ -297,10 +301,10 @@ packages:
     dev: true
     optional: true
 
-  registry.npmmirror.com/@swc/core-darwin-x64@1.3.59:
-    resolution: {integrity: sha512-iqDs+yii9mOsmpJez82SEi4d4prWDRlapHxKnDVJ0x1AqRo41vIq8t3fujrvCHYU5VQgOYGh4ooXQpaP2H3B2A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-darwin-x64/-/core-darwin-x64-1.3.59.tgz}
+  registry.npmmirror.com/@swc/core-darwin-x64@1.3.72:
+    resolution: {integrity: sha512-y5O/WQ1g0/VfTgeNahWIOutbdD5U2Gi703jaefdcoJo3FUx8WU108QQdbVGwGMgaqapo3iQB6Qs9paixYQAYsA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-darwin-x64/-/core-darwin-x64-1.3.72.tgz}
     name: '@swc/core-darwin-x64'
-    version: 1.3.59
+    version: 1.3.72
     engines: {node: '>=10'}
     cpu: [x64]
     os: [darwin]
@@ -308,10 +312,10 @@ packages:
     dev: true
     optional: true
 
-  registry.npmmirror.com/@swc/core-linux-arm-gnueabihf@1.3.59:
-    resolution: {integrity: sha512-PB0PP+SgkCSd/kYmltnPiGv42cOSaih1OjXCEjxvNwUFEmWqluW6uGdWaNiR1LoYMxhcHZTc336jL2+O3l6p0Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-linux-arm-gnueabihf/-/core-linux-arm-gnueabihf-1.3.59.tgz}
+  registry.npmmirror.com/@swc/core-linux-arm-gnueabihf@1.3.72:
+    resolution: {integrity: sha512-05JdWcso0OomHF+7bk5MBDgI8MZ9skcQ/4nhSv5gboSgSiuBmKM15Bg3lZ5iAUwGByNj7pGkSmmd3YwTrXEB+g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-linux-arm-gnueabihf/-/core-linux-arm-gnueabihf-1.3.72.tgz}
     name: '@swc/core-linux-arm-gnueabihf'
-    version: 1.3.59
+    version: 1.3.72
     engines: {node: '>=10'}
     cpu: [arm]
     os: [linux]
@@ -319,10 +323,10 @@ packages:
     dev: true
     optional: true
 
-  registry.npmmirror.com/@swc/core-linux-arm64-gnu@1.3.59:
-    resolution: {integrity: sha512-Ol/JPszWZ+OZ44FOdJe35TfJ1ckG4pYaisZJ4E7PzfwfVe2ygX85C5WWR4e5L0Y1zFvzpcI7gdyC2wzcXk4Cig==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-linux-arm64-gnu/-/core-linux-arm64-gnu-1.3.59.tgz}
+  registry.npmmirror.com/@swc/core-linux-arm64-gnu@1.3.72:
+    resolution: {integrity: sha512-8qRELJaeYshhJgqvyOeXCKqBOpai+JYdWuouMbvvDUL85j3OcZhzR+bipexEbbJKcOCdRnoYB7Qg6mjqZ0t7VA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-linux-arm64-gnu/-/core-linux-arm64-gnu-1.3.72.tgz}
     name: '@swc/core-linux-arm64-gnu'
-    version: 1.3.59
+    version: 1.3.72
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [linux]
@@ -331,10 +335,10 @@ packages:
     dev: true
     optional: true
 
-  registry.npmmirror.com/@swc/core-linux-arm64-musl@1.3.59:
-    resolution: {integrity: sha512-PtTTtGbj9GiY5gJdoSFL2A0vL6BRaS1haAhp6g3hZvLDkTTg+rJURmzwBMMjaQlnGC62x/lLf6MoszHG/05//Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-linux-arm64-musl/-/core-linux-arm64-musl-1.3.59.tgz}
+  registry.npmmirror.com/@swc/core-linux-arm64-musl@1.3.72:
+    resolution: {integrity: sha512-tOqAGZw+Pe7YrBHFrwFVyRiKqjgjzwYbJmY+UDxLrzWrZSVtC3eO2TPrp7kWmhirg40Og81BbdfRAl8ds48w0Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-linux-arm64-musl/-/core-linux-arm64-musl-1.3.72.tgz}
     name: '@swc/core-linux-arm64-musl'
-    version: 1.3.59
+    version: 1.3.72
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [linux]
@@ -343,10 +347,10 @@ packages:
     dev: true
     optional: true
 
-  registry.npmmirror.com/@swc/core-linux-x64-gnu@1.3.59:
-    resolution: {integrity: sha512-XBW9AGi0YsIN76IfesnDSBn/5sjR69J75KUNte8sH6seYlHJ0/kblqUMbUcfr0CiGoJadbzAZeKZZmfN7EsHpg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-linux-x64-gnu/-/core-linux-x64-gnu-1.3.59.tgz}
+  registry.npmmirror.com/@swc/core-linux-x64-gnu@1.3.72:
+    resolution: {integrity: sha512-U2W2xWR3s9nplGVWz376GiBlcLTgxyYKlpZPBNZk0w3OvTcjKC62gW1Pe7PUkk4NgJUnaQDBa/mb4V4Zl+GZPA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-linux-x64-gnu/-/core-linux-x64-gnu-1.3.72.tgz}
     name: '@swc/core-linux-x64-gnu'
-    version: 1.3.59
+    version: 1.3.72
     engines: {node: '>=10'}
     cpu: [x64]
     os: [linux]
@@ -355,10 +359,10 @@ packages:
     dev: true
     optional: true
 
-  registry.npmmirror.com/@swc/core-linux-x64-musl@1.3.59:
-    resolution: {integrity: sha512-Cy5E939SdWPQ34cg6UABNO0RyEe0FuWqzZ/GLKtK11Ir4fjttVlucZiY59uQNyUVUc8T2qE0VBFCyD/zYGuHtg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-linux-x64-musl/-/core-linux-x64-musl-1.3.59.tgz}
+  registry.npmmirror.com/@swc/core-linux-x64-musl@1.3.72:
+    resolution: {integrity: sha512-3+2dUiZBsifKgvnFEHWdysXjInK8K+BfPBw2tTZJmq1+fZLt0rvuErYDVMLfIJnVWLCcJMnDtTXrvkFV1y/6iA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-linux-x64-musl/-/core-linux-x64-musl-1.3.72.tgz}
     name: '@swc/core-linux-x64-musl'
-    version: 1.3.59
+    version: 1.3.72
     engines: {node: '>=10'}
     cpu: [x64]
     os: [linux]
@@ -367,10 +371,10 @@ packages:
     dev: true
     optional: true
 
-  registry.npmmirror.com/@swc/core-win32-arm64-msvc@1.3.59:
-    resolution: {integrity: sha512-z5ZJxizRvRoSAaevRIi3YjQh74OFWEIhonSDWNdqDL7RbjEivcatYcG7OikH6s+rtPhOcwNm3PbGV2Prcgh/gg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-win32-arm64-msvc/-/core-win32-arm64-msvc-1.3.59.tgz}
+  registry.npmmirror.com/@swc/core-win32-arm64-msvc@1.3.72:
+    resolution: {integrity: sha512-ndI8xZ2AId806D25xgqw2SFJ9gc/jhg21+5hA8XPq9ZL+oDiaYDztaP3ijVmZ1G5xXKD9DpgB7xmylv/f6o6GA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-win32-arm64-msvc/-/core-win32-arm64-msvc-1.3.72.tgz}
     name: '@swc/core-win32-arm64-msvc'
-    version: 1.3.59
+    version: 1.3.72
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [win32]
@@ -378,10 +382,10 @@ packages:
     dev: true
     optional: true
 
-  registry.npmmirror.com/@swc/core-win32-ia32-msvc@1.3.59:
-    resolution: {integrity: sha512-vxpsn+hrKAhi5YusQfB/JXUJJVX40rIRE/L49ilBEqdbH8Khkoego6AD+2vWqTdJcUHo1WiAIAEZ0rTsjyorLQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-win32-ia32-msvc/-/core-win32-ia32-msvc-1.3.59.tgz}
+  registry.npmmirror.com/@swc/core-win32-ia32-msvc@1.3.72:
+    resolution: {integrity: sha512-F3TK8JHP3SRFjLRlzcRVZPnvvGm2CQ5/cwbIkaEq0Dla3kyctU8SiRqvtYwWCW4JuY10cUygIg93Ec/C9Lkk4g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-win32-ia32-msvc/-/core-win32-ia32-msvc-1.3.72.tgz}
     name: '@swc/core-win32-ia32-msvc'
-    version: 1.3.59
+    version: 1.3.72
     engines: {node: '>=10'}
     cpu: [ia32]
     os: [win32]
@@ -389,10 +393,10 @@ packages:
     dev: true
     optional: true
 
-  registry.npmmirror.com/@swc/core-win32-x64-msvc@1.3.59:
-    resolution: {integrity: sha512-Ris/cJbURylcLwqz4RZUUBCEGsuaIHOJsvf69W5pGKHKBryVoOTNhBKpo3Km2hoAi5qFQ/ou0trAT4hBsVPZvQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-win32-x64-msvc/-/core-win32-x64-msvc-1.3.59.tgz}
+  registry.npmmirror.com/@swc/core-win32-x64-msvc@1.3.72:
+    resolution: {integrity: sha512-FXMnIUtLl0yEmGkw+xbUg/uUPExvUxUlLSHbX7CnbSuOIHqMHzvEd9skIueLAst4bvmJ8kT1hDyAIWQcTIAJYQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-win32-x64-msvc/-/core-win32-x64-msvc-1.3.72.tgz}
     name: '@swc/core-win32-x64-msvc'
-    version: 1.3.59
+    version: 1.3.72
     engines: {node: '>=10'}
     cpu: [x64]
     os: [win32]
@@ -400,10 +404,10 @@ packages:
     dev: true
     optional: true
 
-  registry.npmmirror.com/@swc/core@1.3.59:
-    resolution: {integrity: sha512-ZBw31zd2E5SXiodwGvjQdx5ZC90b2uyX/i2LeMMs8LKfXD86pfOfQac+JVrnyEKDhASXj9icgsF9NXBhaMr3Kw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core/-/core-1.3.59.tgz}
+  registry.npmmirror.com/@swc/core@1.3.72:
+    resolution: {integrity: sha512-+AKjwLH3/STfPrd7CHzB9+NG1FVT0UKJMUChuWq9sQ8b9xlV8vUeRgZXgh/EHYvNQgl/OUTQKtL6xU2yOLuEuA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core/-/core-1.3.72.tgz}
     name: '@swc/core'
-    version: 1.3.59
+    version: 1.3.72
     engines: {node: '>=10'}
     requiresBuild: true
     peerDependencies:
@@ -412,16 +416,16 @@ packages:
       '@swc/helpers':
         optional: true
     optionalDependencies:
-      '@swc/core-darwin-arm64': registry.npmmirror.com/@swc/core-darwin-arm64@1.3.59
-      '@swc/core-darwin-x64': registry.npmmirror.com/@swc/core-darwin-x64@1.3.59
-      '@swc/core-linux-arm-gnueabihf': registry.npmmirror.com/@swc/core-linux-arm-gnueabihf@1.3.59
-      '@swc/core-linux-arm64-gnu': registry.npmmirror.com/@swc/core-linux-arm64-gnu@1.3.59
-      '@swc/core-linux-arm64-musl': registry.npmmirror.com/@swc/core-linux-arm64-musl@1.3.59
-      '@swc/core-linux-x64-gnu': registry.npmmirror.com/@swc/core-linux-x64-gnu@1.3.59
-      '@swc/core-linux-x64-musl': registry.npmmirror.com/@swc/core-linux-x64-musl@1.3.59
-      '@swc/core-win32-arm64-msvc': registry.npmmirror.com/@swc/core-win32-arm64-msvc@1.3.59
-      '@swc/core-win32-ia32-msvc': registry.npmmirror.com/@swc/core-win32-ia32-msvc@1.3.59
-      '@swc/core-win32-x64-msvc': registry.npmmirror.com/@swc/core-win32-x64-msvc@1.3.59
+      '@swc/core-darwin-arm64': registry.npmmirror.com/@swc/core-darwin-arm64@1.3.72
+      '@swc/core-darwin-x64': registry.npmmirror.com/@swc/core-darwin-x64@1.3.72
+      '@swc/core-linux-arm-gnueabihf': registry.npmmirror.com/@swc/core-linux-arm-gnueabihf@1.3.72
+      '@swc/core-linux-arm64-gnu': registry.npmmirror.com/@swc/core-linux-arm64-gnu@1.3.72
+      '@swc/core-linux-arm64-musl': registry.npmmirror.com/@swc/core-linux-arm64-musl@1.3.72
+      '@swc/core-linux-x64-gnu': registry.npmmirror.com/@swc/core-linux-x64-gnu@1.3.72
+      '@swc/core-linux-x64-musl': registry.npmmirror.com/@swc/core-linux-x64-musl@1.3.72
+      '@swc/core-win32-arm64-msvc': registry.npmmirror.com/@swc/core-win32-arm64-msvc@1.3.72
+      '@swc/core-win32-ia32-msvc': registry.npmmirror.com/@swc/core-win32-ia32-msvc@1.3.72
+      '@swc/core-win32-x64-msvc': registry.npmmirror.com/@swc/core-win32-x64-msvc@1.3.72
     dev: true
 
   registry.npmmirror.com/@trysound/sax@0.2.0:
@@ -755,10 +759,10 @@ packages:
       source-map: registry.npmmirror.com/source-map@0.6.1
     dev: true
 
-  registry.npmmirror.com/core-js@3.30.2:
-    resolution: {integrity: sha512-uBJiDmwqsbJCWHAwjrx3cvjbMXP7xD72Dmsn5LOJpiRmE3WbBbN5rCqQ2Qh6Ek6/eOrjlWngEynBWo4VxerQhg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/core-js/-/core-js-3.30.2.tgz}
+  registry.npmmirror.com/core-js@3.32.0:
+    resolution: {integrity: sha512-rd4rYZNlF3WuoYuRIDEmbR/ga9CeuWX9U05umAvgrrZoHY4Z++cp/xwPQMvUpBB4Ag6J8KfD80G0zwCyaSxDww==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/core-js/-/core-js-3.32.0.tgz}
     name: core-js
-    version: 3.30.2
+    version: 3.32.0
     requiresBuild: true
     dev: false
 

@@ -32,9 +32,9 @@ const plugins = [
   swc({
     swc: {
       env: {
-        targets: "chrome >= 53",
+        targets: "defaults",
         mode: "usage",
-        coreJs: "3.30.2",
+        coreJs: "3.32.0",
       },
       jsc: {
         parser: {

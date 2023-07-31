@@ -49,7 +49,7 @@
     "typescript": "5.0.4"
   },
   "dependencies": {
-    "core-js": "3.30.2",
+    "core-js": "3.32.0",
     "tslib": "^2.5.2"
   }
 }

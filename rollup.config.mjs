@@ -13,6 +13,7 @@ import json from "@rollup/plugin-json";
 import alias from "@rollup/plugin-alias";
 import del from "rollup-plugin-delete";
 import panda from "@pandacss/dev/postcss";
+import cascade from "@csstools/postcss-cascade-layers";
 
 const pkg = JSON.parse(
   fs.readFileSync(path.resolve(process.cwd(), "./package.json"), {
@@ -42,11 +43,12 @@ const plugins = [
   }),
   url(),
   postcss({
-    plugins: [panda()],
+    plugins: [panda(), cascade()],
     extract: true,
     minimize: true,
+    extract: "index.css",
   }),
-  // terser(),
+  terser(),
 ];
 
 export default defineConfig({

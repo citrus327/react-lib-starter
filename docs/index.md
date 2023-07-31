@@ -2,7 +2,7 @@
 
 ```jsx live
 import { Box } from '../dist/index.esm.js'
-import '../dist/index.esm.css'
+import '../dist/index.css'
 
 <Box />
 ```

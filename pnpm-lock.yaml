@@ -8,6 +8,9 @@ devDependencies:
   '@blizzbolts/docit':
     specifier: ^0.11.0
     version: registry.npmmirror.com/@blizzbolts/docit@0.11.0(@babel/core@7.22.9)(esbuild@0.18.17)(react-is@18.2.0)
+  '@csstools/postcss-cascade-layers':
+    specifier: ^4.0.0
+    version: registry.npmmirror.com/@csstools/postcss-cascade-layers@4.0.0(postcss@8.4.27)
   '@pandacss/dev':
     specifier: ^0.9.0
     version: registry.npmmirror.com/@pandacss/dev@0.9.0(@internationalized/date@3.3.0)(@types/node@20.4.5)(@types/react-dom@18.2.7)(@types/react@18.2.17)(astro@2.9.6)(typescript@5.0.4)
@@ -47,12 +50,6 @@ devDependencies:
   '@types/react-dom':
     specifier: ^18.2.7
     version: registry.npmmirror.com/@types/react-dom@18.2.7
-  '@types/styled-components':
-    specifier: ^5.1.26
-    version: registry.npmmirror.com/@types/styled-components@5.1.26
-  '@zerollup/ts-transform-paths':
-    specifier: ^1.7.18
-    version: registry.npmmirror.com/@zerollup/ts-transform-paths@1.7.18(typescript@5.0.4)
   cross-env:
     specifier: ^7.0.3
     version: registry.npmmirror.com/cross-env@7.0.3
@@ -65,9 +62,6 @@ devDependencies:
   postcss:
     specifier: ^8.4.27
     version: registry.npmmirror.com/postcss@8.4.27
-  prop-types:
-    specifier: ^15.8.1
-    version: registry.npmmirror.com/prop-types@15.8.1
   react:
     specifier: ^18.2.0
     version: registry.npmmirror.com/react@18.2.0
@@ -686,6 +680,32 @@ packages:
       - react-is
       - stylus
       - supports-color
+    dev: true
+
+  registry.npmmirror.com/@csstools/postcss-cascade-layers@4.0.0(postcss@8.4.27):
+    resolution: {integrity: sha512-dVPVVqQG0FixjM9CG/+8eHTsCAxRKqmNh6H69IpruolPlnEF1611f2AoLK8TijTSAsqBSclKd4WHs1KUb/LdJw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@csstools/postcss-cascade-layers/-/postcss-cascade-layers-4.0.0.tgz}
+    id: registry.npmmirror.com/@csstools/postcss-cascade-layers/4.0.0
+    name: '@csstools/postcss-cascade-layers'
+    version: 4.0.0
+    engines: {node: ^14 || ^16 || >=18}
+    peerDependencies:
+      postcss: ^8.4
+    dependencies:
+      '@csstools/selector-specificity': registry.npmmirror.com/@csstools/selector-specificity@3.0.0(postcss-selector-parser@6.0.13)
+      postcss: registry.npmmirror.com/postcss@8.4.27
+      postcss-selector-parser: registry.npmmirror.com/postcss-selector-parser@6.0.13
+    dev: true
+
+  registry.npmmirror.com/@csstools/selector-specificity@3.0.0(postcss-selector-parser@6.0.13):
+    resolution: {integrity: sha512-hBI9tfBtuPIi885ZsZ32IMEU/5nlZH/KOVYJCOh7gyMxaVLGmLedYqFN6Ui1LXkI8JlC8IsuC0rF0btcRZKd5g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@csstools/selector-specificity/-/selector-specificity-3.0.0.tgz}
+    id: registry.npmmirror.com/@csstools/selector-specificity/3.0.0
+    name: '@csstools/selector-specificity'
+    version: 3.0.0
+    engines: {node: ^14 || ^16 || >=18}
+    peerDependencies:
+      postcss-selector-parser: ^6.0.13
+    dependencies:
+      postcss-selector-parser: registry.npmmirror.com/postcss-selector-parser@6.0.13
     dev: true
 
   registry.npmmirror.com/@emmetio/abbreviation@2.3.3:
@@ -2353,15 +2373,6 @@ packages:
       '@types/unist': registry.npmmirror.com/@types/unist@2.0.7
     dev: true
 
-  registry.npmmirror.com/@types/hoist-non-react-statics@3.3.1:
-    resolution: {integrity: sha512-iMIqiko6ooLrTh1joXodJK5X9xeEALT1kM5G3ZLhD3hszxBdIEd5C75U834D9mLcINgD4OyZf5uQXjkuYydWvA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.1.tgz}
-    name: '@types/hoist-non-react-statics'
-    version: 3.3.1
-    dependencies:
-      '@types/react': registry.npmmirror.com/@types/react@18.2.17
-      hoist-non-react-statics: registry.npmmirror.com/hoist-non-react-statics@3.3.2
-    dev: true
-
   registry.npmmirror.com/@types/json5@0.0.30:
     resolution: {integrity: sha512-sqm9g7mHlPY/43fcSNrCYfOeX9zkTTK+euO5E6+CVijSMm5tTjkVdwdqRkY3ljjIAf8679vps5jKUoJBCLsMDA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/json5/-/json5-0.0.30.tgz}
     name: '@types/json5'
@@ -2462,16 +2473,6 @@ packages:
     resolution: {integrity: sha512-5cJ8CB4yAx7BH1oMvdU0Jh9lrEXyPkar6F9G/ERswkCuvP4KQZfZkSjcMbAICCpQTN4OuZn8tz0HiKv9TGZgrQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/scheduler/-/scheduler-0.16.3.tgz}
     name: '@types/scheduler'
     version: 0.16.3
-    dev: true
-
-  registry.npmmirror.com/@types/styled-components@5.1.26:
-    resolution: {integrity: sha512-KuKJ9Z6xb93uJiIyxo/+ksS7yLjS1KzG6iv5i78dhVg/X3u5t1H7juRWqVmodIdz6wGVaIApo1u01kmFRdJHVw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/styled-components/-/styled-components-5.1.26.tgz}
-    name: '@types/styled-components'
-    version: 5.1.26
-    dependencies:
-      '@types/hoist-non-react-statics': registry.npmmirror.com/@types/hoist-non-react-statics@3.3.1
-      '@types/react': registry.npmmirror.com/@types/react@18.2.17
-      csstype: registry.npmmirror.com/csstype@3.1.2
     dev: true
 
   registry.npmmirror.com/@types/unist@2.0.7:
@@ -3222,30 +3223,6 @@ packages:
     resolution: {integrity: sha512-8BVpWtrLyicwGLup4KY/uN5yLzuXF7FAuTrrFaSGl4z+BBW5OVSzLLVWxhhYa7vgj+UDyHyRfu+9OLmskhfvQA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@zag-js/visually-hidden/-/visually-hidden-0.10.3.tgz}
     name: '@zag-js/visually-hidden'
     version: 0.10.3
-    dev: true
-
-  registry.npmmirror.com/@zerollup/ts-helpers@1.7.18(typescript@5.0.4):
-    resolution: {integrity: sha512-S9zN+y+i5yN/evfWquzSO3lubqPXIsPQf6p9OiPMpRxDx/0totPLF39XoRw48Dav5dSvbIE8D2eAPpXXJxvKwg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@zerollup/ts-helpers/-/ts-helpers-1.7.18.tgz}
-    id: registry.npmmirror.com/@zerollup/ts-helpers/1.7.18
-    name: '@zerollup/ts-helpers'
-    version: 1.7.18
-    peerDependencies:
-      typescript: '>=3.7.2'
-    dependencies:
-      resolve: registry.npmmirror.com/resolve@1.22.2
-      typescript: registry.npmmirror.com/typescript@5.0.4
-    dev: true
-
-  registry.npmmirror.com/@zerollup/ts-transform-paths@1.7.18(typescript@5.0.4):
-    resolution: {integrity: sha512-YPVUxvWQVzRx1OBN0Pmkd58+R9FcfUJuwTaPUSoi5rKxuXMtxevTXdfi0w5mEaIH8b0DfL+wg0wFDHiJE+S2zA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@zerollup/ts-transform-paths/-/ts-transform-paths-1.7.18.tgz}
-    id: registry.npmmirror.com/@zerollup/ts-transform-paths/1.7.18
-    name: '@zerollup/ts-transform-paths'
-    version: 1.7.18
-    peerDependencies:
-      typescript: '>=3.7.2'
-    dependencies:
-      '@zerollup/ts-helpers': registry.npmmirror.com/@zerollup/ts-helpers@1.7.18(typescript@5.0.4)
-      typescript: registry.npmmirror.com/typescript@5.0.4
     dev: true
 
   registry.npmmirror.com/acorn-jsx@5.3.2(acorn@8.10.0):
@@ -8547,16 +8524,6 @@ packages:
     dependencies:
       kleur: registry.npmmirror.com/kleur@3.0.3
       sisteransi: registry.npmmirror.com/sisteransi@1.0.5
-    dev: true
-
-  registry.npmmirror.com/prop-types@15.8.1:
-    resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/prop-types/-/prop-types-15.8.1.tgz}
-    name: prop-types
-    version: 15.8.1
-    dependencies:
-      loose-envify: registry.npmmirror.com/loose-envify@1.4.0
-      object-assign: registry.npmmirror.com/object-assign@4.1.1
-      react-is: registry.npmmirror.com/react-is@16.13.1
     dev: true
 
   registry.npmmirror.com/property-information@6.2.0:

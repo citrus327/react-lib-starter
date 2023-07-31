@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [unreleased]
+## [feat/integrate_panda_css] - 2023-07-31
 
 ### Features
 
@@ -10,12 +10,14 @@ All notable changes to this project will be documented in this file.
 - Change name and update docit;
 - Update tsconfig, using cra tsconfig as base config
 - Switch babel with swc
+- Switch babel with swc
 - Update core-js verson to latest
 - Update various deps; remove core-js; now leverage tsconfig for building target
 - Add @rollup/plugin-replace to inject NODE_ENV #3
 - Add json support
 - Using rollup-plugin-delete instead of rimraf
 - Remove react-is
+- Generate changelog
 
 ### Miscellaneous Tasks
 

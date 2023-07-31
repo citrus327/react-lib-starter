@@ -6,9 +6,9 @@ import external from "rollup-plugin-peer-deps-external";
 import postcss from "rollup-plugin-postcss";
 import terser from "@rollup/plugin-terser";
 import alias from "@rollup/plugin-alias";
-import swc from "@rollup/plugin-swc";
 import path from "node:path";
 import fs from "node:fs";
+import { swc } from "rollup-plugin-swc3";
 
 const pkg = JSON.parse(
   fs.readFileSync(path.resolve(process.cwd(), "./package.json"), {
@@ -29,28 +29,7 @@ const plugins = [
   external({
     includeDependencies: true,
   }),
-  swc({
-    swc: {
-      env: {
-        targets: "defaults",
-        mode: "usage",
-        coreJs: "3.32.0",
-      },
-      jsc: {
-        parser: {
-          syntax: "typescript",
-          tsx: true,
-          dynamicImport: true,
-        },
-        transform: {
-          react: {
-            refresh: true,
-            runtime: "automatic",
-          },
-        },
-      },
-    },
-  }),
+  swc(),
   url(),
   // terser(),
 ];

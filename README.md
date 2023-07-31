@@ -1,11 +1,8 @@
 # react-lib-starter
 
-My React Lib Starter
-
 includes:
-1. babel transpiling with preset-env
-2. postcss
-3. esm and cjs output
-4. type generation
-5. component documentation
-6. external all dependencies
+1. rollup + swc for bundling and transpiling
+2. d.ts generation
+3. panda-css with postcss
+4. esm and cjs output
+5. deps are not bundled

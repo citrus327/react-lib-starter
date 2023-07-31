@@ -12,6 +12,7 @@ import terser from "@rollup/plugin-terser";
 import json from "@rollup/plugin-json";
 import alias from "@rollup/plugin-alias";
 import del from "rollup-plugin-delete";
+import panda from "@pandacss/dev/postcss";
 
 const pkg = JSON.parse(
   fs.readFileSync(path.resolve(process.cwd(), "./package.json"), {
@@ -33,16 +34,19 @@ const plugins = [
     entries: [{ find: "@", replacement: path.join(process.cwd(), "src") }],
   }),
   json(),
-  swc(),
+  swc({
+    tsconfig: "./tsconfig.build.json",
+  }),
   external({
     includeDependencies: true,
   }),
   url(),
   postcss({
-    plugins: [],
+    plugins: [panda()],
+    extract: true,
     minimize: true,
   }),
-  terser(),
+  // terser(),
 ];
 
 export default defineConfig({

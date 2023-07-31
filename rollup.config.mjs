@@ -1,4 +1,6 @@
 import { defineConfig } from "rollup";
+import { swc } from "rollup-plugin-swc3";
+import replace from "@rollup/plugin-replace";
 import commonjs from "@rollup/plugin-commonjs";
 import resolve from "@rollup/plugin-node-resolve";
 import url from "@rollup/plugin-url";
@@ -8,7 +10,6 @@ import terser from "@rollup/plugin-terser";
 import alias from "@rollup/plugin-alias";
 import path from "node:path";
 import fs from "node:fs";
-import { swc } from "rollup-plugin-swc3";
 
 const pkg = JSON.parse(
   fs.readFileSync(path.resolve(process.cwd(), "./package.json"), {
@@ -17,21 +18,26 @@ const pkg = JSON.parse(
 );
 
 const plugins = [
+  resolve(),
+  commonjs(),
+  replace({
+    values: {
+      "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV),
+    },
+    preventAssignment: true,
+  }),
   alias({
     entries: [{ find: "@", replacement: path.join(process.cwd(), "src") }],
   }),
-  resolve(),
-  commonjs(),
+  swc(),
+  external({
+    includeDependencies: true,
+  }),
+  url(),
   postcss({
     plugins: [],
     minimize: true,
   }),
-  external({
-    includeDependencies: true,
-  }),
-  swc(),
-  url(),
-  // terser(),
 ];
 
 export default defineConfig({

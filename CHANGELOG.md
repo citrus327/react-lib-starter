@@ -22,6 +22,7 @@ All notable changes to this project will be documented in this file.
 - Panda integration
 - Panda integration
 - Add cascade layer polyfill for panda-css
+- Auto changelog gen
 
 ### Miscellaneous Tasks
 

@@ -7,6 +7,7 @@ import url from "@rollup/plugin-url";
 import external from "rollup-plugin-peer-deps-external";
 import postcss from "rollup-plugin-postcss";
 import terser from "@rollup/plugin-terser";
+import json from "@rollup/plugin-json";
 import alias from "@rollup/plugin-alias";
 import path from "node:path";
 import fs from "node:fs";
@@ -29,6 +30,7 @@ const plugins = [
   alias({
     entries: [{ find: "@", replacement: path.join(process.cwd(), "src") }],
   }),
+  json(),
   swc(),
   external({
     includeDependencies: true,
@@ -38,6 +40,7 @@ const plugins = [
     plugins: [],
     minimize: true,
   }),
+  terser(),
 ];
 
 export default defineConfig({

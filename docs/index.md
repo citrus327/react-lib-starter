@@ -1,7 +1,8 @@
 # Hello World
 
 ```jsx live
-import { Box } from '../src'
+import { Box } from '../dist/index.esm.js'
+import '../dist/index.css'
 
 <Box />
 ```

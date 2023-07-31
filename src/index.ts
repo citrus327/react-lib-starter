@@ -1,1 +1,3 @@
-export * from "./Box/index.tsx";
+import "./index.css";
+
+export * from "./Box";

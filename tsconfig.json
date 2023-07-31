@@ -8,7 +8,9 @@
     "outDir": "./dist",
     "sourceMap": true,
     "emitDeclarationOnly": true,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "esModuleInterop": false,
+    "baseUrl": ".",
   },
-  "include": ["./src"]
+  "include":  ["src", "styled-system"]
 }

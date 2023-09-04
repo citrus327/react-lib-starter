@@ -10,7 +10,8 @@
     "dev": "cross-env NODE_ENV=development run-p -l \"build:lib -w\" \"build:declaration --watch\"",
     "build": "cross-env NODE_ENV=production run-p build:lib build:declaration",
     "build:lib": "rollup -c rollup.config.mjs",
-    "build:declaration": "tsc --project tsconfig.build.json"
+    "build:declaration": "tsc --project tsconfig.build.json",
+    "prepublishOnly": "node script/generate_changelog.cjs"
   },
   "repository": {
     "type": "git",
@@ -35,13 +36,13 @@
     "@rollup/plugin-replace": "^5.0.2",
     "@rollup/plugin-terser": "^0.4.3",
     "@rollup/plugin-url": "^8.0.1",
-    "@swc/core": "^1.3.72",
+    "@swc/core": "^1.3.82",
     "@tsconfig/create-react-app": "^2.0.1",
     "@types/node": "^20.4.5",
     "@types/react": "^18.2.17",
     "@types/react-dom": "^18.2.7",
     "cross-env": "^7.0.3",
-    "git-cliff": "^1.2.0",
+    "git-cliff": "^1.3.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.27",
     "react": "^18.2.0",

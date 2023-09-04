@@ -14,12 +14,15 @@ import alias from "@rollup/plugin-alias";
 import del from "rollup-plugin-delete";
 import panda from "@pandacss/dev/postcss";
 import cascade from "@csstools/postcss-cascade-layers";
-
+import dev from "rollup-plugin-dev";
 const pkg = JSON.parse(
   fs.readFileSync(path.resolve(process.cwd(), "./package.json"), {
     encoding: "utf-8",
   })
 );
+
+const isDev = process.env.NODE_ENV === "development";
+const isProd = !isDev;
 
 const plugins = [
   del({ targets: "dist/*" }),
@@ -50,7 +53,13 @@ const plugins = [
     minimize: true,
     extract: "index.css",
   }),
-  terser(),
+  isProd && terser(),
+  isDev &&
+    dev({
+      dirs: ["dist"],
+      port: 7000,
+      host: "0.0.0.0",
+    }),
 ];
 
 export default defineConfig({

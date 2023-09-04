@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.0
+
+### Minor Changes
+
+- try changeset
+
 All notable changes to this project will be documented in this file.
 
 ## [feat/integrate_panda_css] - 2023-09-04

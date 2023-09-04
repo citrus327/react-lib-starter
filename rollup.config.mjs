@@ -14,11 +14,7 @@ import alias from "@rollup/plugin-alias";
 import del from "rollup-plugin-delete";
 import panda from "@pandacss/dev/postcss";
 import cascade from "@csstools/postcss-cascade-layers";
-import json5 from "json5";
 
-const TS_CONFIG_PATH = "./tsconfig.json";
-const tsconfig = json5.parse(fs.readFileSync(TS_CONFIG_PATH));
-const baseUrl = path.resolve(tsconfig.compilerOptions.baseUrl);
 const pkg = JSON.parse(
   fs.readFileSync(path.resolve(process.cwd(), "./package.json"), {
     encoding: "utf-8",
@@ -42,9 +38,6 @@ const plugins = [
   swc(
     defineRollupSwcOption({
       tsconfig: "./tsconfig.build.json",
-      jsc: {
-        baseUrl,
-      },
     })
   ),
   external({

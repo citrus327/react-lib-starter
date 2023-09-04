@@ -9,8 +9,7 @@
     "sourceMap": true,
     "emitDeclarationOnly": true,
     "noImplicitAny": false,
-    "esModuleInterop": false,
-    "baseUrl": ".",
+    "esModuleInterop": false
   },
   "include":  ["src", "styled-system"]
 }

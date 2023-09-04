@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [feat/integrate_panda_css] - 2023-07-31
+## [feat/integrate_panda_css] - 2023-09-04
 
 ### Features
 
@@ -23,12 +23,19 @@ All notable changes to this project will be documented in this file.
 - Panda integration
 - Add cascade layer polyfill for panda-css
 - Auto changelog gen
+- Auto changelog gen
+- Remove doc
 
 ### Miscellaneous Tasks
 
 - Update pnpm/action-setup action to v2.2.4
 - Update js-devtools/npm-publish action to v2
+- Update pnpm/action-setup action to v2.4.0
 - Tune tsconfig; add docit
+- Update dependency typescript to v5.1.6
+- Update dependency typescript to v5.2.2
+- Update dependency rollup-plugin-swc3 to ^0.10.0
+- Add readme
 
 ## [1.0.0] - 2022-07-12
 

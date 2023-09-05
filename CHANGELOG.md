@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.0
+
+### Major Changes
+
+- 5400655: first major release
+
 ## 0.4.0
 
 ### Minor Changes

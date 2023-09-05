@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.4.0
+
+### Minor Changes
+
+- c1270a8: try minor
+
+### Patch Changes
+
+- ba40ac2: mimic changeset changes
+
 ## 0.3.2
 
 ### Patch Changes

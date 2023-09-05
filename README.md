@@ -26,3 +26,14 @@ The template includes the following:
 
 1. Directly use this repo as template in github
 2. use degit: `degit git@github.com:citrus327/react-lib-starter.git`
+
+## Workflow
+
+1. Create new branch
+2. Do as many commits as you want
+3. After push all the commits, execute `pnpm run change` or `npx changeset` to create a changeset
+4. Modify changeset markdown file in `.changeset` folder if needed
+5. Push all the changes to current branch
+6. Make a pull request manually in your repo or just merge into the main branch
+7. Then changeset action will detect the changesets you've made and create new PR for it.
+8. After accepting the new PR, the changeset action will then go change the package version and publish to target registry

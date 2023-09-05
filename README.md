@@ -15,16 +15,16 @@ The template includes the following:
 5. using `terser` to minify all bundled files.
 6. [Changesets](https://github.com/changesets/changesets) setup for versioning and auto changelog generation.
 7. auto NPM package publishing workflow with [changesets action](https://github.com/changesets/action)
-8. zero depenency by default
+8. zero dependency by default
 
 ## What's missing
 
-1. Sass support, curretly only support raw css file, you can install `sass` or `node-sass` to enable it.
-2. A quick playground
+1. `sass` support, curretly only support raw css file, you can install `sass` or `node-sass` to enable it.
+2. A quick playground for components
 
 ## Usage
 
-1. Directly use this repo as template in github
+1. Directly use this repo as a template in github
 2. use degit: `degit git@github.com:citrus327/react-lib-starter.git`
 
 ## Workflow

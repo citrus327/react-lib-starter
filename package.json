@@ -10,7 +10,7 @@
     "dev": "cross-env NODE_ENV=development run-p -l \"build:lib -w\" \"build:declaration --watch\"",
     "build": "cross-env NODE_ENV=production run-p build:lib build:declaration",
     "build:lib": "rollup -c rollup.config.mjs",
-    "build:declaration": "tsc --project tsconfig.build.json",
+    "build:declaration": "tsc --project tsconfig.build.json && tsc-alias -p tsconfig.build.json",
     "change": "npx changeset",
     "version": "npx changeset version"
   },
@@ -56,6 +56,7 @@
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-serve": "^2.0.2",
     "rollup-plugin-swc3": "^0.10.1",
+    "tsc-alias": "^1.8.7",
     "typescript": "5.2.2"
   },
   "publishConfig": {

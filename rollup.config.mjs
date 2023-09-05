@@ -35,7 +35,13 @@ const plugins = [
     preventAssignment: true,
   }),
   alias({
-    entries: [{ find: "@", replacement: path.join(process.cwd(), "src") }],
+    entries: [
+      { find: "@", replacement: path.join(process.cwd(), "src") },
+      {
+        find: "@styled-system",
+        replacement: path.join(process.cwd(), "styled-system"),
+      },
+    ],
   }),
   json(),
   swc(

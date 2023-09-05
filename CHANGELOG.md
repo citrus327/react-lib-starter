@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.1
+
+### Patch Changes
+
+- a78d88d: new flow testing
+
 ## 1.1.0
 
 ### Minor Changes

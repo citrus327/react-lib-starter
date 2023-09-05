@@ -27,7 +27,7 @@ export const Box: React.FC<BoxProps> = () => {
           setIsBorderless(!isBorderless);
         }}
       >
-        StyledButtonWithPandaCss
+        StyledButtonWithPandaCssAgain
       </styled.button>
 
       <div className={styles(isBorderless)}>FRAME</div>

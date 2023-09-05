@@ -1,7 +1,7 @@
-import type { BoxProps } from "../Box/types";
+import type { BoxProps } from "@/Box/types";
 import * as React from "react";
-import { css } from "../../styled-system/css";
-import { styled, Grid } from "../../styled-system/jsx";
+import { css } from "@styled-system/css";
+import { styled, Grid } from "@styled-system/jsx";
 
 const styles = (isBorderless: boolean) =>
   css({

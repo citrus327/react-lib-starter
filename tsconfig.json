@@ -9,7 +9,12 @@
     "sourceMap": true,
     "emitDeclarationOnly": true,
     "noImplicitAny": false,
-    "esModuleInterop": false
+    "esModuleInterop": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@styled-system/*": ["./styled-system/*"]
+    }
   },
   "include":  ["src", "styled-system"]
 }

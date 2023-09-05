@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.4.0
+
+### Minor Changes
+
+- edf63a3: try minor
+
+### Patch Changes
+
+- edf63a3: mimic changeset changes
+
 ## 0.3.2
 
 ### Patch Changes

@@ -35,6 +35,9 @@ jobs:
       - name: Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@v1
+        with:
+          title: Changeset Auto PR
+          createGithubReleases: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

@@ -1,5 +1,21 @@
 # Changelog
 
+## 1.1.0
+
+### Minor Changes
+
+- 287eab9: ## Added
+
+  1. feat: support alias for declaration and panda-css
+
+  ## Changed
+
+  2. chore: update readme.md for more introduction
+
+### Patch Changes
+
+- 4c029ee: chore: update workflow params
+
 ## 1.0.0
 
 ### Major Changes

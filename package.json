@@ -10,8 +10,7 @@
     "dev": "cross-env NODE_ENV=development run-p -l \"build:lib -w\" \"build:declaration --watch\"",
     "build": "cross-env NODE_ENV=production run-p build:lib build:declaration",
     "build:lib": "rollup -c rollup.config.mjs",
-    "build:declaration": "tsc --project tsconfig.build.json",
-    "prepublishOnly": "node script/generate_changelog.cjs"
+    "build:declaration": "tsc --project tsconfig.build.json"
   },
   "repository": {
     "type": "git",

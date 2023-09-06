@@ -22,6 +22,7 @@ The template includes the following:
 1. `sass` support, curretly only support raw css file, you can install `sass` or `node-sass` to enable it.
 2. A quick playground for components
 3. Testing library integration
+4. bundler visualizer
 
 ## Usage
 

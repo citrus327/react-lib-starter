@@ -1,5 +1,8 @@
 # react-lib-starter
 
+
+![Version](https://img.shields.io/npm/v/@citrus327/react-template-lib)
+
 ## Introduction
 
 This is my personal React library template.

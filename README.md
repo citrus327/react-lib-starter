@@ -26,6 +26,9 @@ The template includes the following:
 2. A quick playground for components
 3. Testing library integration
 4. bundler visualizer
+5. Rollup cache
+6. single tree-shaked .d.ts file
+
 
 ## Usage
 

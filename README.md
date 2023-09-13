@@ -1,6 +1,5 @@
 # react-lib-starter
 
-
 ![Version](https://img.shields.io/npm/v/@citrus327/react-template-lib)
 
 ## Introduction
@@ -12,23 +11,19 @@ This is my personal React library template.
 The template includes the following:
 
 1. [rollup](https://rollupjs.org/) + [swc](https://swc.rs/) with esm and cjs output
-2. `rollup-plugin-dev` plugin for serving static file in a dev server (port 7000)
-3. `.d.ts` generation with alias support via [tsc-alias](https://github.com/justkey007/tsc-alias)
-4. [panda-css](https://panda-css.com/) integration as a postcss plugin
-5. using `terser` to minify all bundled files.
-6. [Changesets](https://github.com/changesets/changesets) setup for versioning and auto changelog generation.
-7. auto NPM package publishing workflow with [changesets action](https://github.com/changesets/action)
-8. zero dependency by default
+2. [panda-css](https://panda-css.com/) integration as a postcss plugin
+3. [Changesets](https://github.com/changesets/changesets) setup for versioning and auto changelog generation.
+4. auto NPM package publishing workflow via [changesets action](https://github.com/changesets/action)
+5. zero dependency by default
+6. `vitest` for testing
+7. minify all bundled files via [@rollup/plugin-terser](https://www.npmjs.com/package/@rollup/plugin-terser).
+8. `.d.ts` generation with alias support via [tsc-alias](https://github.com/justkey007/tsc-alias)
+9. single tree-shaked .d.ts file via [rollup-plugin-dts](https://www.npmjs.com/package/rollup-plugin-dts)
+10. bundle analyze via [rollup-plugin-visualizer](https://www.npmjs.com/package/rollup-plugin-visualizer)
 
 ## What's missing
 
-1. `sass` support, curretly only support raw css file, you can install `sass` or `node-sass` to enable it.
-2. A quick playground for components
-3. Testing library integration
-4. bundler visualizer
-5. Rollup cache
-6. single tree-shaked .d.ts file
-
+1. A quick playground for components
 
 ## Usage
 

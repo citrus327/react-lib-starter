@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.1.3
+
+### Patch Changes
+
+- cd4222e: chore: simply package.json script
+  chore: integrate vitest and react testing lib
+  chore: update tsconfig into one
+  chore: remove dev server
+  chore: add bundle-visualizer
+
 ## 1.1.2
 
 ### Patch Changes

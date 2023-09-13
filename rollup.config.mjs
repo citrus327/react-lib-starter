@@ -24,6 +24,14 @@ const pkg = JSON.parse(
 const isDev = process.env.NODE_ENV === "development";
 const isProd = !isDev;
 
+export const aliasConfig = [
+  { find: "@", replacement: path.join(process.cwd(), "src") },
+  {
+    find: "@styled-system",
+    replacement: path.join(process.cwd(), "styled-system"),
+  }
+]
+
 const plugins = [
   del({ targets: "dist/*" }),
   resolve(),
@@ -35,18 +43,12 @@ const plugins = [
     preventAssignment: true,
   }),
   alias({
-    entries: [
-      { find: "@", replacement: path.join(process.cwd(), "src") },
-      {
-        find: "@styled-system",
-        replacement: path.join(process.cwd(), "styled-system"),
-      },
-    ],
+    entries: aliasConfig
   }),
   json(),
   swc(
     defineRollupSwcOption({
-      tsconfig: "./tsconfig.build.json",
+      tsconfig: "./tsconfig.json",
     })
   ),
   external({
@@ -55,7 +57,6 @@ const plugins = [
   url(),
   postcss({
     plugins: [panda(), cascade()],
-    extract: true,
     minimize: true,
     extract: "index.css",
   }),

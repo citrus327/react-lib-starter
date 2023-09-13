@@ -7,10 +7,8 @@
   "module": "dist/index.esm.js",
   "scripts": {
     "prepare": "panda codegen",
-    "dev": "cross-env NODE_ENV=development run-p -l \"build:* -w\"",
-    "build": "cross-env NODE_ENV=production run-p build:*",
-    "build:lib": "rollup -c rollup.config.mjs",
-    "build:declaration": "tsc --project tsconfig.build.json && tsc-alias -p tsconfig.build.json",
+    "dev": "rimraf dist && cross-env NODE_ENV=development rollup -c rollup.config.mjs -w",
+    "build": "rimraf dist && cross-env NODE_ENV=production rollup -c rollup.config.mjs",
     "change": "npx changeset",
     "version": "npx changeset version",
     "coverage": "vitest run --coverage",
@@ -54,8 +52,9 @@
     "postcss": "^8.4.27",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "rimraf": "^5.0.1",
     "rollup": "^3.27.0",
-    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-dts": "^6.0.2",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-serve": "^2.0.2",
@@ -67,8 +66,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "pnpm@8.7.5",
-  "dependencies": {
-    "rollup-cache": "^2.0.0"
-  }
+  "packageManager": "pnpm@8.7.5"
 }

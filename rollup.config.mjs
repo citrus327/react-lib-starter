@@ -1,6 +1,5 @@
 import path from "node:path";
 import fs from "node:fs";
-import { defineConfig } from "rollup";
 import { swc, defineRollupSwcOption } from "rollup-plugin-swc3";
 import replace from "@rollup/plugin-replace";
 import commonjs from "@rollup/plugin-commonjs";
@@ -11,10 +10,9 @@ import postcss from "rollup-plugin-postcss";
 import terser from "@rollup/plugin-terser";
 import json from "@rollup/plugin-json";
 import alias from "@rollup/plugin-alias";
-import del from "rollup-plugin-delete";
 import panda from "@pandacss/dev/postcss";
 import cascade from "@csstools/postcss-cascade-layers";
-import { cacheBuild } from "rollup-cache";
+import { dts } from "rollup-plugin-dts";
 
 const pkg = JSON.parse(
   fs.readFileSync(path.resolve(process.cwd(), "./package.json"), {
@@ -34,7 +32,6 @@ export const aliasConfig = [
 ];
 
 const plugins = [
-  del({ targets: "dist/*" }),
   resolve(),
   commonjs(),
   replace({
@@ -61,7 +58,6 @@ const plugins = [
     minimize: true,
     extract: "index.css",
   }),
-  isProd && terser(),
 ];
 
 const input = "src/index.ts";
@@ -70,23 +66,27 @@ const output = [
   {
     file: pkg.main,
     format: "cjs",
-    exports: "named",
   },
   {
     file: pkg.module,
     format: "es",
-    exports: "named",
   },
 ];
 
-export default cacheBuild(
+const rollupConfig = [
   {
-    name: pkg.name,
-    enabled: isDev,
-  },
-  defineConfig({
     input,
     output,
-    plugins,
-  })
-);
+    plugins: [...plugins, isProd && terser()],
+  },
+  {
+    input,
+    output: {
+      file: pkg.types,
+      format: "es",
+    },
+    plugins: [...plugins, dts()],
+  },
+];
+
+export default rollupConfig;

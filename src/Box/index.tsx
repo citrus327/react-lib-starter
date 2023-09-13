@@ -1,5 +1,5 @@
 import type { BoxProps } from "@/Box/types";
-import * as React from "react";
+import React from "react";
 import { css } from "@styled-system/css";
 import { styled, Grid } from "@styled-system/jsx";
 
@@ -15,11 +15,12 @@ const styles = (isBorderless: boolean) =>
     },
   });
 
-export const Box: React.FC<BoxProps> = () => {
+export const Box: React.FC<BoxProps> = (props) => {
+  const { style } = props;
   const [isBorderless, setIsBorderless] = React.useState(false);
 
   return (
-    <Grid gridTemplateColumns={2}>
+    <Grid gridTemplateColumns={2} style={style}>
       <styled.button
         bg="blue.500"
         cursor="pointer"

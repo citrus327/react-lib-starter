@@ -56,7 +56,6 @@
     "react-dom": "^18.2.0",
     "rollup": "^3.27.0",
     "rollup-plugin-delete": "^2.0.0",
-    "rollup-plugin-dev": "^2.0.4",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-serve": "^2.0.2",
@@ -68,5 +67,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "pnpm@8.7.5"
+  "packageManager": "pnpm@8.7.5",
+  "dependencies": {
+    "rollup-cache": "^2.0.0"
+  }
 }

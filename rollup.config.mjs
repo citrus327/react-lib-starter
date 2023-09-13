@@ -14,7 +14,8 @@ import alias from "@rollup/plugin-alias";
 import del from "rollup-plugin-delete";
 import panda from "@pandacss/dev/postcss";
 import cascade from "@csstools/postcss-cascade-layers";
-import dev from "rollup-plugin-dev";
+import { cacheBuild } from "rollup-cache";
+
 const pkg = JSON.parse(
   fs.readFileSync(path.resolve(process.cwd(), "./package.json"), {
     encoding: "utf-8",
@@ -29,8 +30,8 @@ export const aliasConfig = [
   {
     find: "@styled-system",
     replacement: path.join(process.cwd(), "styled-system"),
-  }
-]
+  },
+];
 
 const plugins = [
   del({ targets: "dist/*" }),
@@ -43,7 +44,7 @@ const plugins = [
     preventAssignment: true,
   }),
   alias({
-    entries: aliasConfig
+    entries: aliasConfig,
   }),
   json(),
   swc(
@@ -61,27 +62,31 @@ const plugins = [
     extract: "index.css",
   }),
   isProd && terser(),
-  isDev &&
-    dev({
-      dirs: ["dist"],
-      port: 7000,
-      host: "0.0.0.0",
-    }),
 ];
 
-export default defineConfig({
-  input: "src/index.ts",
-  output: [
-    {
-      file: pkg.main,
-      format: "cjs",
-      exports: "named",
-    },
-    {
-      file: pkg.module,
-      format: "es",
-      exports: "named",
-    },
-  ],
-  plugins,
-});
+const input = "src/index.ts";
+
+const output = [
+  {
+    file: pkg.main,
+    format: "cjs",
+    exports: "named",
+  },
+  {
+    file: pkg.module,
+    format: "es",
+    exports: "named",
+  },
+];
+
+export default cacheBuild(
+  {
+    name: pkg.name,
+    enabled: isDev,
+  },
+  defineConfig({
+    input,
+    output,
+    plugins,
+  })
+);

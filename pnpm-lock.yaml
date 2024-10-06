@@ -96,8 +96,8 @@ devDependencies:
     specifier: ^2.0.2
     version: registry.npmmirror.com/rollup-plugin-serve@2.0.2
   rollup-plugin-swc3:
-    specifier: ^0.10.1
-    version: registry.npmmirror.com/rollup-plugin-swc3@0.10.1(@swc/core@1.3.82)(rollup@3.27.0)
+    specifier: ^0.12.0
+    version: 0.12.0(@swc/core@1.3.82)(rollup@3.27.0)
   rollup-plugin-visualizer:
     specifier: ^5.9.2
     version: 5.9.2(rollup@3.27.0)
@@ -546,6 +546,10 @@ packages:
     bundledDependencies:
       - is-unicode-supported
 
+  /@dual-bundle/import-meta-resolve@4.1.0:
+    resolution: {integrity: sha512-+nxncfwHM5SgAtrVzgpzJOI1ol0PkumhVo469KCf9lUi21IGcY90G98VuHm9VRrUypmAzawAHO9bs6hqeADaVg==}
+    dev: true
+
   /@emmetio/abbreviation@2.3.3:
     resolution: {integrity: sha512-mgv58UrU3rh4YgbE/TzgLQwJ3pFsHHhCLqY20aJq+9comytTXUDNGG/SMtSeMJdkpxgXSXunBGLD8Boka3JyVA==}
     dependencies:
@@ -958,6 +962,10 @@ packages:
     dev: true
     optional: true
 
+  /@fastify/deepmerge@2.0.0:
+    resolution: {integrity: sha512-fsaybTGDyQ5KpPsplQqb9yKdCf2x/pbNpMNk8Tvp3rRz7lVcupKysH4b2ELMN2P4Hak1+UqTYdTj/u4FNV2p0g==}
+    dev: true
+
   /@floating-ui/core@1.4.1:
     resolution: {integrity: sha512-jk3WqquEJRlcyu7997NtR5PibI+y5bi+LS3hPmguVClypenMsCY3CBa3LAQnozRCtCrYWSEtAdiskpamuJRFOQ==}
     dependencies:
@@ -1031,129 +1039,16 @@ packages:
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
     dev: true
 
+  /@jridgewell/sourcemap-codec@1.5.0:
+    resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
+    dev: true
+
   /@jridgewell/trace-mapping@0.3.18:
     resolution: {integrity: sha512-w+niJYzMHdd7USdiH2U6869nqhD2nbfZXND5Yp93qIbEmnDNk7PD48o+YchRVpzMU7M6jVCbenTR7PA1FLQ9pA==}
     dependencies:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
-
-  /@napi-rs/magic-string-android-arm-eabi@0.3.4:
-    resolution: {integrity: sha512-sszAYxqtzzJ4FDerDNHcqL9NhqPhj8W4DNiOanXYy50mA5oojlRtaAFPiB5ZMrWDBM32v5Q30LrmxQ4eTtu2Dg==}
-    engines: {node: '>= 10'}
-    cpu: [arm]
-    os: [android]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@napi-rs/magic-string-android-arm64@0.3.4:
-    resolution: {integrity: sha512-jdQ6HuO0X5rkX4MauTcWR4HWdgjakTOmmzqXg8L26+jOHVVG1LZE+Su5qvV4bP8vMb2h+vPE+JsnwqSmWymu3Q==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [android]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@napi-rs/magic-string-darwin-arm64@0.3.4:
-    resolution: {integrity: sha512-6NmMtvURce9/oq09XBZmuIeI6lPLGtEJ2ZPO/QzL3nLZa6wygiCnO/sFACKYNg5/73ET5HMMTeuogE1JI+r2Lw==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [darwin]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@napi-rs/magic-string-darwin-x64@0.3.4:
-    resolution: {integrity: sha512-f9LmfMiUAKDOtl0meOuLYeVb6OERrgGzrTg1Tn3R3fTAShM2kxRbfAuPE9ljuXxIFzOv/uqRNLSl/LqCJwpREA==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [darwin]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@napi-rs/magic-string-freebsd-x64@0.3.4:
-    resolution: {integrity: sha512-rqduQ4odiDK4QdM45xHWRTU4wtFIfpp8g8QGpz+3qqg7ivldDqbbNOrBaf6Oeu77uuEvWggnkyuChotfKgJdJQ==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [freebsd]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@napi-rs/magic-string-linux-arm-gnueabihf@0.3.4:
-    resolution: {integrity: sha512-pVaJEdEpiPqIfq3M4+yMAATS7Z9muDcWYn8H7GFH1ygh8GwgLgKfy/n/lG2M6zp18Mwd0x7E2E/qg9GgCyUzoQ==}
-    engines: {node: '>= 10'}
-    cpu: [arm]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@napi-rs/magic-string-linux-arm64-gnu@0.3.4:
-    resolution: {integrity: sha512-9FwoAih/0tzEZx0BjYYIxWkSRMjonIn91RFM3q3MBs/evmThXUYXUqLNa1PPIkK1JoksswtDi48qWWLt8nGflQ==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@napi-rs/magic-string-linux-arm64-musl@0.3.4:
-    resolution: {integrity: sha512-wCR7R+WPOcAKmVQc1s6h6HwfwW1vL9pM8BjUY9Ljkdb8wt1LmZEmV2Sgfc1SfbRQzbyl+pKeufP6adRRQVzYDA==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@napi-rs/magic-string-linux-x64-gnu@0.3.4:
-    resolution: {integrity: sha512-sbxFDpYnt5WFbxQ1xozwOvh5A7IftqSI0WnE9O7KsQIOi0ej2dvFbfOW4tmFkvH/YP8KJELo5AhP2+kEq1DpYA==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@napi-rs/magic-string-linux-x64-musl@0.3.4:
-    resolution: {integrity: sha512-jN4h/7e2Ul8v3UK5IZu38NXLMdzVWhY4uEDlnwuUAhwRh26wBQ1/pLD97Uy/Z3dFNBQPcsv60XS9fOM1YDNT6w==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [linux]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@napi-rs/magic-string-win32-arm64-msvc@0.3.4:
-    resolution: {integrity: sha512-gMUyTRHLWpzX2ntJFCbW2Gnla9Y/WUmbkZuW5SBAo/Jo8QojHn76Y4PNgnoXdzcsV9b/45RBxurYKAfFg9WTyg==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [win32]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@napi-rs/magic-string-win32-ia32-msvc@0.3.4:
-    resolution: {integrity: sha512-QIMauMOvEHgL00K9np/c9CT/CRtLOz3mRTQqcZ9XGzSoAMrpxH71KSpDJrKl7h7Ro6TZ+hJ0C3T+JVuTCZNv4A==}
-    engines: {node: '>= 10'}
-    cpu: [ia32]
-    os: [win32]
-    requiresBuild: true
-    dev: true
-    optional: true
-
-  /@napi-rs/magic-string-win32-x64-msvc@0.3.4:
-    resolution: {integrity: sha512-V8FMSf828MzOI3P6/765MR7zHU6CUZqiyPhmAnwYoKFNxfv7oCviN/G6NcENeCdcYOvNgh5fYzaNLB96ndId5A==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [win32]
-    requiresBuild: true
-    dev: true
-    optional: true
 
   /@nodelib/fs.scandir@2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1342,7 +1237,7 @@ packages:
       '@pandacss/types': 0.14.0
       '@vue/compiler-sfc': 3.3.4
       lil-fp: 1.4.5
-      magic-string: 0.30.2
+      magic-string: 0.30.3
       ts-morph: 19.0.0
       ts-pattern: 5.0.4
     transitivePeerDependencies:
@@ -1438,6 +1333,21 @@ packages:
       open: 9.1.0
       picocolors: 1.0.0
       tslib: 2.6.1
+    dev: true
+
+  /@rollup/pluginutils@5.1.2(rollup@3.27.0):
+    resolution: {integrity: sha512-/FIdS3PyZ39bjZlwqFnWqCOVnW7o963LtKMwQOD0NhQqw22gSr2YY1afu3FxRip4ZCZNsD5jq6Aaz6QV3D/Njw==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+    dependencies:
+      '@types/estree': 1.0.1
+      estree-walker: 2.0.2
+      picomatch: 2.3.1
+      rollup: registry.npmmirror.com/rollup@3.27.0
     dev: true
 
   /@sinclair/typebox@0.27.8:
@@ -1664,6 +1574,10 @@ packages:
     resolution: {integrity: sha512-A9S1ijj/4MX06I1W/6on8lhaYyq1Ir7gaOvfllW1o4RzVWW88HAeqX0pUx9VgOLnNpdiGeUW2CTkg18p5LWIrA==}
     dev: true
 
+  /@types/estree@1.0.1:
+    resolution: {integrity: sha512-LG4opVs2ANWZ1TJoKc937iMmNstM/d0ae1vNbnBvBhqCSezgVUOzcLCqbI5elV8Vy6WKwKjaqR+zO9VKirBBCA==}
+    dev: true
+
   /@types/hast@2.3.5:
     resolution: {integrity: sha512-SvQi0L/lNpThgPoleH53cdjB3y9zpLlVjRbqB3rH8hx1jiRSBGAhyjV3H+URFjNVRqt2EdYNrbZE5IsGlNfpRg==}
     dependencies:
@@ -1839,7 +1753,7 @@ packages:
       '@vue/reactivity-transform': 3.3.4
       '@vue/shared': 3.3.4
       estree-walker: 2.0.2
-      magic-string: 0.30.2
+      magic-string: 0.30.3
       postcss: 8.4.27
       source-map-js: 1.0.2
     dev: true
@@ -1858,7 +1772,7 @@ packages:
       '@vue/compiler-core': 3.3.4
       '@vue/shared': 3.3.4
       estree-walker: 2.0.2
-      magic-string: 0.30.2
+      magic-string: 0.30.3
     dev: true
 
   /@vue/shared@3.3.4:
@@ -2441,6 +2355,7 @@ packages:
   /ansi-styles@3.2.1:
     resolution: {integrity: sha512-VT0ZI6kZRdTh8YyJw3SMbYm/u+NqfsAxEpWO0Pf9sq8/e94WxxOpPKx9FR1FlyCtOVDNOQ+8ntlqFxiRc+r5qA==}
     engines: {node: '>=4'}
+    requiresBuild: true
     dependencies:
       color-convert: 1.9.3
     dev: true
@@ -2881,6 +2796,7 @@ packages:
 
   /color-convert@1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}
+    requiresBuild: true
     dependencies:
       color-name: 1.1.3
     dev: true
@@ -3261,6 +3177,7 @@ packages:
   /escape-string-regexp@1.0.5:
     resolution: {integrity: sha512-vbRorB5FUQWvla16U8R/qgaFIya2qGzwDrNmCZuYKrbdSUMG6I1ZCGQRefkRVhuOkIGVne7BQ35DSfo1qvJqFg==}
     engines: {node: '>=0.8.0'}
+    requiresBuild: true
     dev: true
 
   /escape-string-regexp@5.0.0:
@@ -3272,6 +3189,10 @@ packages:
     resolution: {integrity: sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==}
     engines: {node: '>=4'}
     hasBin: true
+    dev: true
+
+  /estree-walker@0.6.1:
+    resolution: {integrity: sha512-SqmZANLWS0mnatqbSfRP5g8OXZC12Fgg1IwNtLsyHDzJizORW4khDfjPqJZsemPWBB2uqykUah5YpQ6epsqC/w==}
     dev: true
 
   /estree-walker@2.0.2:
@@ -3505,6 +3426,12 @@ packages:
   /get-stream@6.0.1:
     resolution: {integrity: sha512-ts6Wi+2j3jQjqi70w5AlN8DFnkSwC+MqmxEzdEALB2qXZYV3X/b1CTfgPLGJNMeAWxdPfU8FO1ms3NUfaHCPYg==}
     engines: {node: '>=10'}
+    dev: true
+
+  /get-tsconfig@4.8.1:
+    resolution: {integrity: sha512-k9PN+cFBmaLWtVz29SkUoqU5O0slLuHJXt/2P+tMVFT+phsSGXGkp9t3rQIqdz0e+06EHNGs3oM6ZX1s2zHxRg==}
+    dependencies:
+      resolve-pkg-maps: 1.0.0
     dev: true
 
   /github-slugger@1.5.0:
@@ -4292,6 +4219,12 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
+    dev: true
+
+  /magic-string@0.30.11:
+    resolution: {integrity: sha512-+Wri9p0QHMy+545hKww7YAu5NyzF8iomPL/RQazugQ9+Ez4Ic3mERMd8ZTX5rfK944j+560ZJi8iAwgak1Ac7A==}
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.5.0
     dev: true
 
   /magic-string@0.30.2:
@@ -5423,6 +5356,10 @@ packages:
     resolution: {integrity: sha512-KigOCHcocU3XODJxsu8i/j8T9tzT4adHiecwORRQ0ZZFcp7ahwXuRU1m+yuO90C5ZUyGeGfocHDI14M3L3yDAQ==}
     dev: true
 
+  /resolve-pkg-maps@1.0.0:
+    resolution: {integrity: sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==}
+    dev: true
+
   /resolve@1.22.2:
     resolution: {integrity: sha512-Sb+mjNHOULsBv818T40qSPeRiuWLyaGMa5ewydRLFimneixmVy2zdivRl+AF6jaYPC8ERxGDmFSiqui6SfPd+g==}
     hasBin: true
@@ -5502,6 +5439,22 @@ packages:
       '@babel/code-frame': 7.22.13
     dev: true
 
+  /rollup-plugin-swc3@0.12.0(@swc/core@1.3.82)(rollup@3.27.0):
+    resolution: {integrity: sha512-uT6EOMk4m8j7eeBtXk4maitFDKGCaZlc9xIJvv+prg7F59kSH7o1k4XsS9XFeI6IfmuV10ljH5kQWtF40ps+UQ==}
+    engines: {node: '>=16'}
+    peerDependencies:
+      '@swc/core': '>=1.2.165'
+      rollup: ^2.0.0 || ^3.0.0 || ^4.0.0
+    dependencies:
+      '@dual-bundle/import-meta-resolve': 4.1.0
+      '@fastify/deepmerge': 2.0.0
+      '@rollup/pluginutils': 5.1.2(rollup@3.27.0)
+      '@swc/core': registry.npmmirror.com/@swc/core@1.3.82
+      get-tsconfig: 4.8.1
+      rollup: registry.npmmirror.com/rollup@3.27.0
+      rollup-preserve-directives: 1.1.2(rollup@3.27.0)
+    dev: true
+
   /rollup-plugin-visualizer@5.9.2(rollup@3.27.0):
     resolution: {integrity: sha512-waHktD5mlWrYFrhOLbti4YgQCn1uR24nYsNuXxg7LkPH8KdTXVWR9DNY1WU0QqokyMixVXJS4J04HNrVTMP01A==}
     engines: {node: '>=14'}
@@ -5517,6 +5470,15 @@ packages:
       rollup: registry.npmmirror.com/rollup@3.27.0
       source-map: 0.7.4
       yargs: 17.7.2
+    dev: true
+
+  /rollup-preserve-directives@1.1.2(rollup@3.27.0):
+    resolution: {integrity: sha512-OOaYh4zO0Dcd/eVWGB8H69CgTiohl+jJqc2TLtjLENVIQaV2rxO3OW6RILzCQOdDvPT+/rzwRp+97OXhem895Q==}
+    peerDependencies:
+      rollup: ^2.0.0 || ^3.0.0 || ^4.0.0
+    dependencies:
+      magic-string: 0.30.11
+      rollup: registry.npmmirror.com/rollup@3.27.0
     dev: true
 
   /rollup@3.28.1:
@@ -5805,6 +5767,7 @@ packages:
   /supports-color@5.5.0:
     resolution: {integrity: sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==}
     engines: {node: '>=4'}
+    requiresBuild: true
     dependencies:
       has-flag: 3.0.0
     dev: true
@@ -6818,12 +6781,6 @@ packages:
       postcss-selector-parser: registry.npmmirror.com/postcss-selector-parser@6.0.13
     dev: true
 
-  registry.npmmirror.com/@fastify/deepmerge@1.3.0:
-    resolution: {integrity: sha512-J8TOSBq3SoZbDhM9+R/u77hP93gz/rajSA+K2kGyijPpORPWUXHUpTaleoj+92As0S9uPRP7Oi8IqMf0u+ro6A==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/@fastify/deepmerge/-/deepmerge-1.3.0.tgz}
-    name: '@fastify/deepmerge'
-    version: 1.3.0
-    dev: true
-
   registry.npmmirror.com/@jridgewell/source-map@0.3.5:
     resolution: {integrity: sha512-UTYAUj/wviwdsMfzoSJspJxbkH5o1snzwX0//0ENX1u/55kkZZkcTZP6u9bwKGkv+dkk9at4m1Cpt0uY80kcpQ==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/@jridgewell/source-map/-/source-map-0.3.5.tgz}
     name: '@jridgewell/source-map'
@@ -6861,27 +6818,6 @@ packages:
       fs-extra: 8.1.0
       globby: registry.npmmirror.com/globby@11.1.0
       read-yaml-file: registry.npmmirror.com/read-yaml-file@1.1.0
-    dev: true
-
-  registry.npmmirror.com/@napi-rs/magic-string@0.3.4:
-    resolution: {integrity: sha512-DEWl/B99RQsyMT3F9bvrXuhL01/eIQp/dtNSE3G1jQ4mTGRcP4iHWxoPZ577WrbjUinrNgvRA5+08g8fkPgimQ==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/@napi-rs/magic-string/-/magic-string-0.3.4.tgz}
-    name: '@napi-rs/magic-string'
-    version: 0.3.4
-    engines: {node: '>= 10'}
-    optionalDependencies:
-      '@napi-rs/magic-string-android-arm-eabi': 0.3.4
-      '@napi-rs/magic-string-android-arm64': 0.3.4
-      '@napi-rs/magic-string-darwin-arm64': 0.3.4
-      '@napi-rs/magic-string-darwin-x64': 0.3.4
-      '@napi-rs/magic-string-freebsd-x64': 0.3.4
-      '@napi-rs/magic-string-linux-arm-gnueabihf': 0.3.4
-      '@napi-rs/magic-string-linux-arm64-gnu': 0.3.4
-      '@napi-rs/magic-string-linux-arm64-musl': 0.3.4
-      '@napi-rs/magic-string-linux-x64-gnu': 0.3.4
-      '@napi-rs/magic-string-linux-x64-musl': 0.3.4
-      '@napi-rs/magic-string-win32-arm64-msvc': 0.3.4
-      '@napi-rs/magic-string-win32-ia32-msvc': 0.3.4
-      '@napi-rs/magic-string-win32-x64-msvc': 0.3.4
     dev: true
 
   registry.npmmirror.com/@rollup/plugin-alias@5.0.0(rollup@3.27.0):
@@ -7009,16 +6945,6 @@ packages:
       make-dir: registry.npmmirror.com/make-dir@3.1.0
       mime: registry.npmmirror.com/mime@3.0.0
       rollup: registry.npmmirror.com/rollup@3.27.0
-    dev: true
-
-  registry.npmmirror.com/@rollup/pluginutils@4.2.1:
-    resolution: {integrity: sha512-iKnFXr7NkdZAIHiIWE+BX5ULi/ucVFYWD6TbAV+rZctiRTY2PL6tsIKhoIOaoskiWAkgu+VsbXgUVDNLHf+InQ==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/@rollup/pluginutils/-/pluginutils-4.2.1.tgz}
-    name: '@rollup/pluginutils'
-    version: 4.2.1
-    engines: {node: '>= 8.0.0'}
-    dependencies:
-      estree-walker: 2.0.2
-      picomatch: registry.npmmirror.com/picomatch@2.3.1
     dev: true
 
   registry.npmmirror.com/@rollup/pluginutils@5.0.2(rollup@3.27.0):
@@ -7905,12 +7831,6 @@ packages:
     hasBin: true
     dev: true
 
-  registry.npmmirror.com/estree-walker@0.6.1:
-    resolution: {integrity: sha512-SqmZANLWS0mnatqbSfRP5g8OXZC12Fgg1IwNtLsyHDzJizORW4khDfjPqJZsemPWBB2uqykUah5YpQ6epsqC/w==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/estree-walker/-/estree-walker-0.6.1.tgz}
-    name: estree-walker
-    version: 0.6.1
-    dev: true
-
   registry.npmmirror.com/estree-walker@2.0.2:
     resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/estree-walker/-/estree-walker-2.0.2.tgz}
     name: estree-walker
@@ -8061,14 +7981,6 @@ packages:
     dependencies:
       call-bind: registry.npmmirror.com/call-bind@1.0.2
       get-intrinsic: registry.npmmirror.com/get-intrinsic@1.2.1
-    dev: true
-
-  registry.npmmirror.com/get-tsconfig@4.6.2:
-    resolution: {integrity: sha512-E5XrT4CbbXcXWy+1jChlZmrmCwd5KGx502kDCXJJ7y898TtWW9FwoG5HfOLVRKmlmDGkWN2HM9Ho+/Y8F0sJDg==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/get-tsconfig/-/get-tsconfig-4.6.2.tgz}
-    name: get-tsconfig
-    version: 4.6.2
-    dependencies:
-      resolve-pkg-maps: registry.npmmirror.com/resolve-pkg-maps@1.0.0
     dev: true
 
   registry.npmmirror.com/glob@8.1.0:
@@ -9704,12 +9616,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  registry.npmmirror.com/resolve-pkg-maps@1.0.0:
-    resolution: {integrity: sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/resolve-pkg-maps/-/resolve-pkg-maps-1.0.0.tgz}
-    name: resolve-pkg-maps
-    version: 1.0.0
-    dev: true
-
   registry.npmmirror.com/resolve@1.22.2:
     resolution: {integrity: sha512-Sb+mjNHOULsBv818T40qSPeRiuWLyaGMa5ewydRLFimneixmVy2zdivRl+AF6jaYPC8ERxGDmFSiqui6SfPd+g==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/resolve/-/resolve-1.22.2.tgz}
     name: resolve
@@ -9768,44 +9674,12 @@ packages:
       opener: registry.npmmirror.com/opener@1.5.2
     dev: true
 
-  registry.npmmirror.com/rollup-plugin-swc3@0.10.1(@swc/core@1.3.82)(rollup@3.27.0):
-    resolution: {integrity: sha512-cRjkK5CqqOO1GTPPcdxPqczR5YNibxKyO7OY1tWbHzEhd/VDlnc30WROdnvz6wc13dJg3HO8xGUfjIvyZTx+Gg==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/rollup-plugin-swc3/-/rollup-plugin-swc3-0.10.1.tgz}
-    id: registry.npmmirror.com/rollup-plugin-swc3/0.10.1
-    name: rollup-plugin-swc3
-    version: 0.10.1
-    engines: {node: '>=12'}
-    peerDependencies:
-      '@swc/core': '>=1.2.165'
-      rollup: ^2.0.0 || ^3.0.0
-    dependencies:
-      '@fastify/deepmerge': registry.npmmirror.com/@fastify/deepmerge@1.3.0
-      '@rollup/pluginutils': registry.npmmirror.com/@rollup/pluginutils@4.2.1
-      '@swc/core': registry.npmmirror.com/@swc/core@1.3.82
-      get-tsconfig: registry.npmmirror.com/get-tsconfig@4.6.2
-      rollup: registry.npmmirror.com/rollup@3.27.0
-      rollup-swc-preserve-directives: registry.npmmirror.com/rollup-swc-preserve-directives@0.3.2(@swc/core@1.3.82)(rollup@3.27.0)
-    dev: true
-
   registry.npmmirror.com/rollup-pluginutils@2.8.2:
     resolution: {integrity: sha512-EEp9NhnUkwY8aif6bxgovPHMoMoNr2FulJziTndpt5H9RdwC47GSGuII9XxpSdzVGM0GWrNPHV6ie1LTNJPaLQ==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/rollup-pluginutils/-/rollup-pluginutils-2.8.2.tgz}
     name: rollup-pluginutils
     version: 2.8.2
     dependencies:
-      estree-walker: registry.npmmirror.com/estree-walker@0.6.1
-    dev: true
-
-  registry.npmmirror.com/rollup-swc-preserve-directives@0.3.2(@swc/core@1.3.82)(rollup@3.27.0):
-    resolution: {integrity: sha512-W0zljPCOMFErWUweRvnN9LCNrII2KzjAw9iZUNM1kZdf3rwQGQQiaCPnH4ugu3UIj1b+zEJKee20S8Ozgwh8Wg==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/rollup-swc-preserve-directives/-/rollup-swc-preserve-directives-0.3.2.tgz}
-    id: registry.npmmirror.com/rollup-swc-preserve-directives/0.3.2
-    name: rollup-swc-preserve-directives
-    version: 0.3.2
-    peerDependencies:
-      '@swc/core': '>=1.2.165'
-      rollup: ^2.0.0 || ^3.0.0
-    dependencies:
-      '@napi-rs/magic-string': registry.npmmirror.com/@napi-rs/magic-string@0.3.4
-      '@swc/core': registry.npmmirror.com/@swc/core@1.3.82
-      rollup: registry.npmmirror.com/rollup@3.27.0
+      estree-walker: 0.6.1
     dev: true
 
   registry.npmmirror.com/rollup@3.27.0:
